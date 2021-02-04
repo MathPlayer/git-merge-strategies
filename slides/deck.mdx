@@ -1,0 +1,75 @@
+import { themes } from 'mdx-deck'
+
+export const theme = themes.notes
+
+# Git Merging
+
+---
+
+### Types of merging
+
+- Merge commit
+- Rebase
+- Squash
+
+---
+
+import { FastForwardExamples, NoFastForwardExamples } from "../components/FastForward"
+
+## No Fast Forward Merge
+
+- Will always result in a merge commit
+- Doesn't matter if anything else has been merged in the meantime
+
+<NoFastForwardExamples />
+
+---
+
+## Fast Forward
+- Will never leave a merge commit
+- Can only be done if no other work has been merged
+
+
+<FastForwardExamples />
+
+---
+
+## Squash & Merge
+
+import Merge from "../components/Merge"
+
+<Merge />
+
+---
+
+## Rebase
+
+import Rebase from "../components/Rebase"
+
+<Rebase />
+
+---
+
+## Comparisons
+---
+### Fast forward vs no fast forward
+- Requiring fast forward merges guarentees that the tests have been run against the code that will eventually be master
+- Requiring fast forward merges means that all PRs need to be rebased and rebuilt after any other merge
+---
+### Squashing
+- Loses commit information and so makes it harder for git to resolve conflicts
+- If combined with fast forwarding it keeps the master branch linear
+- Obvious place where PRs are merged
+---
+### Rebasing
+- Keeps the master branch linear. Leaves all the commits from the feature branch on the master branch
+- No obvious place where PRs are merged
+---
+### Merge commit
+- Keeps the master branch clean (single commit for a whole piece of work) but not linear
+- Keeps all commit history
+- Obvious place where PRs are merged
+
+---
+
+## The End
