@@ -23,7 +23,6 @@ const makeTree = (gitgraph) => {
 const FastForward = ({ step, additionalOptions = {} }: { step: number, additionalOptions?: GitgraphOptions }) =>
     <Gitgraph options={{ ...options, ...additionalOptions }}>
         {(gitgraph) => {
-            console.log('FastForward ' + step)
             const { master, branch } = makeTree(gitgraph)
 
             if (step >= 1) {
@@ -35,7 +34,6 @@ const FastForward = ({ step, additionalOptions = {} }: { step: number, additiona
 const NoFastForward = ({ step, additionalOptions = {} }: { step: number, additionalOptions?: GitgraphOptions }) =>
     <Gitgraph options={{ ...options, ...additionalOptions }}>
         {(gitgraph) => {
-            console.log('NoFastForward ' + step)
             const { master, branch } = makeTree(gitgraph)
 
             if (step >= 1) {
@@ -47,7 +45,6 @@ const NoFastForward = ({ step, additionalOptions = {} }: { step: number, additio
 const NoFastForwardConflict = ({ step, additionalOptions = {} }: { step: number, additionalOptions?: GitgraphOptions }) =>
     <Gitgraph options={{ ...options, ...additionalOptions }}>
         {(gitgraph) => {
-            console.log('NoFastForwardConflict ' + step)
             const { master, branch } = makeTree(gitgraph)
             master.commit(otherWorkOptions)
 

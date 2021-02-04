@@ -19,7 +19,6 @@ const Rebase = ({ step }: { step: number }) => {
     const graph = useCallback(gitgraph => {
         const master = gitgraph.branch("master")
         master.commit(initalOptions)
-        console.log('BLAH ' + step)
 
         if (step == 0) {
             const branch = master.branch("a-feature")
