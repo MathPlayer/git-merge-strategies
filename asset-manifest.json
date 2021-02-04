@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/git-merge-strategies/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/git-merge-strategies/static/js/main.583da91c.chunk.js",
+    "main.js.map": "/git-merge-strategies/static/js/main.583da91c.chunk.js.map",
+    "runtime-main.js": "/git-merge-strategies/static/js/runtime-main.6d7b5c60.js",
+    "runtime-main.js.map": "/git-merge-strategies/static/js/runtime-main.6d7b5c60.js.map",
+    "static/js/2.ab1158a7.chunk.js": "/git-merge-strategies/static/js/2.ab1158a7.chunk.js",
+    "static/js/2.ab1158a7.chunk.js.map": "/git-merge-strategies/static/js/2.ab1158a7.chunk.js.map",
+    "static/js/3.6976ab4a.chunk.js": "/git-merge-strategies/static/js/3.6976ab4a.chunk.js",
+    "static/js/3.6976ab4a.chunk.js.map": "/git-merge-strategies/static/js/3.6976ab4a.chunk.js.map",
+    "index.html": "/git-merge-strategies/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/git-merge-strategies/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.ab1158a7.chunk.js.LICENSE.txt": "/git-merge-strategies/static/js/2.ab1158a7.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/git-merge-strategies/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d7b5c60.js",
+    "static/js/2.ab1158a7.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.583da91c.chunk.js"
+  ]
+}
